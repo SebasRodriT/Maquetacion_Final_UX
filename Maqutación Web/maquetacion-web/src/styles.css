@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;600&display=swap");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #111;
+}
