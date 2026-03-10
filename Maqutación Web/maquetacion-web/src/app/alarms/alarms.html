@@ -20,21 +20,20 @@
       <!-- Aside Left -->
       <div class="aside-left">
         <div class="logo-area">
-          <img class="alarma" src="assets/alarma-1.png" alt="Alarma logo" 
-          />
+          <img class="alarma" src="assets/alarma-1.png" alt="Alarma logo" />
         </div>
 
         <div class="nav">
-          <div class="background-border-2">
-            <div class="text-wrapper-2">Dashboard</div>
+          <div class="nav-item" routerLink="/" style="cursor: pointer;">
+            <div class="text-wrapper-3">Dashboard</div>
           </div>
-          <div class="border">
+          <div class="nav-item active">
             <div class="text-wrapper-3">Alarms</div>
           </div>
-          <div class="border">
+          <div class="nav-item">
             <div class="text-wrapper-3">Video History</div>
           </div>
-          <div class="border">
+          <div class="nav-item">
             <div class="text-wrapper-3">Settings</div>
           </div>
         </div>
@@ -74,88 +73,81 @@
         </div>
       </div>
 
-      <!-- Main Central -->
+      <!-- Main Central System -->
       <div class="main-central-system">
         <header class="header">
           <div class="heading">
-            <div class="text-wrapper-8">Dashboard</div>
+            <div class="text-heading">Alarms</div>
           </div>
           <div class="div-wrapper-3">
-            <p class="p">Overview of your smart home security status.</p>
+            <div class="calendar-schedule">Calendar &amp; Schedule</div>
+          </div>
+          <div class="div-wrapper-3">
+            <div class="text-wrapper-8">October 2025</div>
           </div>
         </header>
 
-        <div class="system-overview-grid">
-          <div class="section-active">
-            <div class="div-wrapper-3">
-              <div class="text-wrapper-9">Active Alarms</div>
-            </div>
-            <div class="container-5">
-              <div class="container-wrapper">
-                <div class="front-door-entry-wrapper">
-                  <div class="front-door-entry">Front Door - Entry<br />Sensor</div>
-                </div>
-              </div>
-              <div class="border-2">
-                <div class="container-6">
-                  <div class="text-wrapper-6">Living Room - Motion</div>
-                </div>
-                <div class="container-7"></div>
-              </div>
-              <div class="border-3">
-                <div class="container-6">
-                  <div class="text-wrapper-6">Garage - Tilt Sensor</div>
-                </div>
-              </div>
-            </div>
-            <div class="container-8">
-              <button class="button-2">
-                <div class="text-wrapper-10">Silence All</div>
-              </button>
-              <div class="button-margin">
-                <button class="button-3" routerLink="/alarms">
-                  <div class="text-wrapper-10">Configure</div>
-                </button>
-              </div>
-            </div>
+        <!-- Calendar Grid -->
+        <div class="calendar-grid">
+          <!-- Day Headers -->
+          <div class="calendar-header-row">
+            <div class="day-header"><div class="day-label">SUN</div></div>
+            <div class="day-header"><div class="day-label">MON</div></div>
+            <div class="day-header"><div class="day-label">TUE</div></div>
+            <div class="day-header"><div class="day-label">WED</div></div>
+            <div class="day-header"><div class="day-label">THU</div></div>
+            <div class="day-header"><div class="day-label">FRI</div></div>
+            <div class="day-header"><div class="day-label">SAT</div></div>
           </div>
 
-          <div class="section-storage">
-            <div class="heading-2">
-              <div class="text-wrapper-11">System Storage</div>
-            </div>
-            <div class="element-wrapper">
-              <img class="element" src="assets/450_1000-1.png" alt="Storage chart" />
-            </div>
-            <div class="container-9">
-              <p class="text-wrapper-12">Storage used: 84% (42.5 GB / 50 GB)</p>
-            </div>
-            <div class="background-wrapper">
-              <div class="background"></div>
-            </div>
+          <!-- Week Rows -->
+          <div class="calendar-week">
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
           </div>
+          <div class="calendar-week">
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell highlighted"></div>
+            <div class="calendar-cell"></div>
+          </div>
+          <div class="calendar-week">
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+          </div>
+          <div class="calendar-week">
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+            <div class="calendar-cell"></div>
+          </div>
+        </div>
 
-          <div class="section-system">
-            <div class="div-wrapper-3">
-              <div class="text-wrapper-13">Recent Activity Log</div>
-            </div>
-            <div class="container-10">
-              <div class="horizontal-border">
-                <p class="text-wrapper-12">10:45 AM - Kitchen Window Sensor (Closed)</p>
-              </div>
-              <div class="horizontal-border">
-                <p class="text-wrapper-12">10:42 AM - Back Yard Camera (Motion Detected)</p>
-              </div>
-              <div class="horizontal-border">
-                <p class="text-wrapper-12">09:15 AM - System Armed (Away Mode)</p>
-              </div>
-              <div class="horizontal-border">
-                <p class="text-wrapper-12">08:00 AM - Daily Status Report Generated</p>
-              </div>
-            </div>
-            <button class="button-4">
-              <div class="text-wrapper-14">View Full Log</div>
-            </button>
+        <!-- Stats Section -->
+        <div class="stats-section">
+          <div class="stat-card">
+            <div class="stat-label">UPCOMING EVENTS</div>
+            <div class="stat-number">12</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">ALERT LOGS</div>
+            <div class="stat-number">48</div>
           </div>
         </div>
       </div>
@@ -201,7 +193,7 @@
           </div>
         </div>
         <div class="placeholder-for-rest">
-          <img class="istockphoto" src="assets/istockphoto-2196745413-612x612-1.jpg" alt="Security camera" />
+          <img class="istockphoto" src="assets/istockphoto-2196745413-612x612-1.png" alt="Security camera" />
         </div>
         <button class="button-5">
           <div class="text-wrapper-3">Edit Schedule</div>
