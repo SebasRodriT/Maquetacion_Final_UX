@@ -441,9 +441,18 @@
   width: 100%;
 }
 
+.calendar-link {
+  display: block;
+  cursor: pointer;
+}
+
 .calendar-cell {
   height: 95px;
   background-color: #1c1c1e;
+
+.calendar-cell.highlighted:hover {
+  background-color: #c4c9d1;
+}
   border: 1px solid #ffffff;
 }
 
