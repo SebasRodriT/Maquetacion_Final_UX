@@ -8,7 +8,7 @@
       </div>
       <div class="margin">
         <div class="background-border">
-          <div class="text-wrapper">https://smart-alarm-app.local/alarm-manager</div>
+          <div class="text-wrapper">https://smart-alarm-app.local/video-history</div>
         </div>
       </div>
       <div class="div-wrapper">
@@ -30,11 +30,11 @@
             <div class="text-wrapper-3">Alarms</div>
           </a>
           <div class="nav-item active">
+            <div class="text-wrapper-3">Video History</div>
+          </div>
+          <a class="nav-item" routerLink="/alarm-manager">
             <div class="text-wrapper-3">Alarm Manager</div>
-          </div>
-          <div class="nav-item">
-            <div class="text-wrapper-3">Settings</div>
-          </div>
+          </a>
         </div>
 
         <div class="container-3">
@@ -68,47 +68,89 @@
 
       <div class="main-central-system">
         <header class="header">
-          <div class="heading-wrapper">
+          <div class="heading-row">
             <div class="heading">
-              <div class="text-heading-2">Alarm Manager</div>
+              <div class="text-heading">Alarm 07:30 AM - October 13</div>
+            </div>
+            <div class="header-bar">
+              <div class="search-icon" aria-hidden="true">
+                <span class="search-icon-circle"></span>
+                <span class="search-icon-handle"></span>
+              </div>
+              <div class="search-caption">Search history by title or date</div>
             </div>
           </div>
-          <div class="text-wrapper-8">Current Alarms</div>
-          <div class="text-wrapper-8">13 October</div>
         </header>
 
-        <div class="system-overview-grid">
-          <article class="alarm-card alarm-link" routerLink="/video-history" aria-label="Open video history for Work Routine alarm">
-            <div class="alarm-time">07.30</div>
-            <div class="alarm-period">AM</div>
-            <div class="alarm-title">Work Routine</div>
-            <div class="alarm-toggle is-on"></div>
-            <div class="alarm-indicator active"></div>
-          </article>
+        <section class="system-overview-grid">
+          <div class="section-title">Video History</div>
 
-          <article class="alarm-card">
-            <div class="alarm-time">09:15</div>
-            <div class="alarm-period">AM</div>
-            <div class="alarm-title">Weekend Leisure</div>
-            <div class="alarm-toggle is-on"></div>
-            <div class="alarm-indicator muted"></div>
-          </article>
+          <div class="video-grid">
+            <article class="video-item">
+              <div class="video-card large">
+                <div class="play-icon"></div>
+              </div>
+              <div class="video-label">Video 1</div>
+            </article>
+            <article class="video-item">
+              <div class="video-card large">
+                <div class="play-icon"></div>
+              </div>
+              <div class="video-label">Video 2</div>
+            </article>
+            <article class="video-item">
+              <div class="video-card large">
+                <div class="play-icon"></div>
+              </div>
+              <div class="video-label">Video 3</div>
+            </article>
 
-          <article class="alarm-card">
-            <div class="alarm-time">11:30</div>
-            <div class="alarm-period">AM</div>
-            <div class="alarm-title">Gym Session</div>
-            <div class="alarm-toggle is-on"></div>
-            <div class="alarm-indicator warning"></div>
-          </article>
-        </div>
+            <article class="video-item">
+              <div class="video-card medium">
+                <div class="play-icon"></div>
+              </div>
+              <div class="video-label">Video 4</div>
+            </article>
+            <article class="video-item">
+              <div class="video-card medium">
+                <div class="play-icon"></div>
+              </div>
+              <div class="video-label">Video 5</div>
+            </article>
+            <article class="video-item">
+              <div class="video-card medium">
+                <div class="play-icon"></div>
+              </div>
+              <div class="video-label">Video 6</div>
+            </article>
+
+            <article class="video-item">
+              <div class="video-card small">
+                <div class="play-icon"></div>
+              </div>
+              <div class="video-label">Video 7</div>
+            </article>
+            <article class="video-item">
+              <div class="video-card small">
+                <div class="play-icon"></div>
+              </div>
+              <div class="video-label">Video 8</div>
+            </article>
+            <article class="video-item">
+              <div class="video-card small">
+                <div class="play-icon"></div>
+              </div>
+              <div class="video-label">Video 9</div>
+            </article>
+          </div>
+        </section>
       </div>
 
       <div class="aside-right-schedule">
         <div class="heading-2">
-          <div class="text-wrapper-12">Weekly Schedule</div>
+          <div class="text-wrapper-19">Weekly Schedule</div>
         </div>
-        <div class="container-10">
+        <div class="container-7">
           <div class="schedule-card">
             <div class="schedule-day">Mon</div>
             <div class="schedule-entry">08:00 - Arm Away</div>
@@ -135,10 +177,10 @@
     </div>
 
     <footer class="footer">
-      <div class="container-11">
-        <div class="text-wrapper-17">|</div>
+      <div class="container-8">
+        <div class="text-wrapper-24">|</div>
       </div>
-      <p class="p">Last Heartbeat: 2 mins ago</p>
+      <p class="text-wrapper-25">Last Heartbeat: 2 mins ago</p>
     </footer>
   </div>
 </div>
