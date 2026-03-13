@@ -20,6 +20,7 @@
       <div class="aside-left">
         <div class="logo-area">
           <img class="alarma" src="assets/alarma-1.png" alt="Alarma logo" />
+          <div class="logo-area-text">Video History</div>
         </div>
 
         <div class="nav">
@@ -29,12 +30,12 @@
           <a class="nav-item" routerLink="/alarms">
             <div class="text-wrapper-3">Alarms</div>
           </a>
-          <a class="nav-item" routerLink="/video-history">
+          <a class="nav-item active" routerLink="/video-history">
             <div class="text-wrapper-3">Video History</div>
           </a>
-          <div class="nav-item active">
-            <div class="text-wrapper-3">Recording Details</div>
-          </div>
+          <a class="nav-item" routerLink="/account-settings">
+            <div class="text-wrapper-3">Settings</div>
+          </a>
         </div>
 
         <div class="container-3">
@@ -145,7 +146,7 @@
               </span>
               <span class="tool-text">Add notes</span>
             </div>
-            <div class="tool-item">
+            <div class="tool-item tool-link" routerLink="/account-settings" aria-label="Open account settings">
               <span class="tool-icon">
                 <img class="tool-icon-image" src="assets/configuraciones.png" alt="Settings" />
               </span>

@@ -148,17 +148,26 @@
   width: 100%;
   height: 100px;
   background-color: #1c1c1e;
-  border: 2px solid #333333;
-  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 6px;
+  padding: 0 8px 0 2px;
 }
 
 .frame .alarma {
   width: 92px;
   height: 92px;
   object-fit: cover;
+  transform: translateX(-10px);
+}
+
+.frame .logo-area-text {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 .frame .nav {
